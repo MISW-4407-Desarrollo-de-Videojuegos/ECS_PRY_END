@@ -11,12 +11,12 @@ APK = "ecs_pry_01.apk"
 BUNDLE = "ecs_pry_01"
 
 # screen pixels (real, hardware)
-WIDTH=640  # {{cookiecutter.width}}
-HEIGHT=360  # {{cookiecutter.height}}
+WIDTH=256  # {{cookiecutter.width}}
+HEIGHT=240  # {{cookiecutter.height}}
 
 # reference/idealized screen pixels
-REFX = 640
-REFY = 360
+REFX = 256
+REFY = 240
 
 # colors for loader
 COLOR_BACKGROUND = (48, 39, 99)
@@ -349,8 +349,8 @@ asyncio.run(custom_site())
                 <progress value="0" max="100" id="progress"></progress>
             </div>
         </div>
-        <div style="width: 640px; height: 360px; text-align:center; margin: auto;">
-            <canvas class="emscripten" id="canvas" width="640px" height="360px" 
+        <div style="width: 256px; height: 240px; text-align:center; margin: auto;">
+            <canvas class="emscripten" id="canvas" width="256px" height="240px" 
                 oncontextmenu="event.preventDefault()" tabindex="1">
             </canvas>
         </div>
