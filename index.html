@@ -11,12 +11,12 @@ APK = "ecs_pry_01.apk"
 BUNDLE = "ecs_pry_01"
 
 # screen pixels (real, hardware)
-WIDTH=256  # {{cookiecutter.width}}
-HEIGHT=240  # {{cookiecutter.height}}
+WIDTH=512  # {{cookiecutter.width}}
+HEIGHT=480  # {{cookiecutter.height}}
 
 # reference/idealized screen pixels
-REFX = 256
-REFY = 240
+REFX = 512
+REFY = 480
 
 # colors for loader
 COLOR_BACKGROUND = (48, 39, 99)
@@ -170,13 +170,13 @@ async def custom_site():
         prompt = fnt_small.render("CARGA LISTA", True, COLOR_PROMPT)
         prompt_rect = prompt.get_rect()
         prompt_rect.centerx = ux(.05)
-        prompt_rect.centery = uy(.0525)
+        prompt_rect.centery = uy(.05)
         screen.blit(prompt, prompt_rect)
 
         prompt_2 = fnt_small.render("HAZ CLICK PARA EMPEZAR", True, COLOR_PROMPT)
         prompt_2_rect = prompt_2.get_rect()
         prompt_2_rect.centerx = ux(.05)
-        prompt_2_rect.centery = uy(.0625)
+        prompt_2_rect.centery = uy(.06)
         screen.blit(prompt_2, prompt_2_rect)
 
         pygame.display.flip()
@@ -186,15 +186,15 @@ async def custom_site():
         pg_bar(track.len)
 
         prompt = fnt_small.render("CARGA LISTA", True, COLOR_PROMPT)
-        prompt_rect = prompt.get_rect()
+        prompt_rect = prompt.get_rect()z
         prompt_rect.centerx = ux(.05)
-        prompt_rect.centery = uy(.0525)
+        prompt_rect.centery = uy(.05)
         screen.blit(prompt, prompt_rect)
 
         prompt_2 = fnt_small.render("HAZ CLICK PARA EMPEZAR", True, COLOR_PROMPT)
         prompt_2_rect = prompt_2.get_rect()
         prompt_2_rect.centerx = ux(.05)
-        prompt_2_rect.centery = uy(.0625)
+        prompt_2_rect.centery = uy(.06)
         screen.blit(prompt_2, prompt_2_rect)
 
         pygame.display.flip()
@@ -349,8 +349,8 @@ asyncio.run(custom_site())
                 <progress value="0" max="100" id="progress"></progress>
             </div>
         </div>
-        <div style="width: 256px; height: 240px; text-align:center; margin: auto;">
-            <canvas class="emscripten" id="canvas" width="256px" height="240px" 
+        <div style="width: 896px; height: 720px; text-align:center; margin: auto;">
+            <canvas class="emscripten" id="canvas" width="896px" height="720px" 
                 oncontextmenu="event.preventDefault()" tabindex="1">
             </canvas>
         </div>
